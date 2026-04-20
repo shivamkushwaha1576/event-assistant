@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Powered Event Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚀 AI Powered Smart Event Assistant</h1>
+
+    <input type="text" id="username" placeholder="Enter your name"><br>
+
+    <label>Choose Your Interest:</label><br>
+    <select id="interest">
+      <option value="tech">💻 Tech</option>
+      <option value="music">🎶 Music</option>
+      <option value="sports">🏏 Sports</option>
+    </select><br>
+
+    <label>Available Time (hours):</label><br>
+    <input type="number" id="time" placeholder="Enter hours"><br>
+
+    <input type="number" id="reminderTime" placeholder="Reminder time (sec)"><br>
+
+    <button onclick="suggestEvent()">Get Recommendation</button>
+    <button onclick="setReminder()">⏰ Set Reminder</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
